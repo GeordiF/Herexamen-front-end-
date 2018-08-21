@@ -1,0 +1,500 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100%;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
+body {
+  background-color: beige;
+  height: 100%;
+}
+
+.homeBody{
+  height: 850px;
+}
+
+/*-------------------------------------------------------------------- HEADER */
+
+header{
+  background-color: #FFCEFF;
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+.headerlogo {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+#logo {
+
+  width: 100%;
+
+}
+
+.navigation{
+  width: 100%;
+  text-align: center;
+
+}
+
+.nav{
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -4px;;
+}
+
+.nav ul{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #FFCEFF;
+  float: left;
+
+}
+
+.nav a, .nav h1{
+    color: black;
+    list-style-type: none;
+    float: left;
+
+}
+
+.nav ul li{
+  float: left;
+  display: inline-block;
+  box-align: center;
+  padding: 30px;
+
+}
+
+.pages{
+  border-bottom: 5px solid transparent;
+  transition: border-bottom 0.5s ;
+}
+
+.pages:hover{
+    border-bottom: 5px solid red;
+}
+
+/*---------------------------------------------------------------------- HOME */
+
+.home-content{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 40px;
+  color: #333333;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.home-content h1{
+  font-size: 3em;
+  padding-bottom: 50px;
+  line-height: 60px;
+}
+
+.home-content li{
+  list-style-type: none;
+}
+
+button{
+  margin-top: 50px;
+  padding: 15px 40px 15px 40px;
+  background-color: #f4a6f4;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+
+}
+
+.pulseBtn:hover {
+  animation: btnpulse 1s ease-out infinite;
+}
+
+@keyframes btnpulse {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.05);}
+  100%{transform: scale(1);}
+  }
+
+/*-------------------------------------------------------------------- PEOPLE */
+
+.home-content li{
+  background-color: #fcd9fc;
+  margin-top: 50px;
+  border-radius: 10px;
+
+}
+
+.home-content li h3{
+  background-color: #f4a6f4;
+  color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: background-color 0.5s, color 0.5s ;
+
+}
+
+.detailname{
+
+  text-decoration:none;
+
+}
+
+.home-content h3:hover{
+  background-color: #ff0000;
+  color: white;
+}
+
+.home-content li p, .home-content-left h3{
+      padding-left: 20px;
+}
+
+.home-content li:last-child{
+  margin-bottom: 60px;
+}
+
+#charInfo tr td {
+  text-align: left;
+  padding-left: 18%
+}
+
+#charInfo tr:last-child td:last-child {
+  text-align: center;
+  padding-left: 0;
+}
+
+/*----------------------------------------------------------------------- ADD */
+
+table {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.add label, .add input{
+    display: block;
+}
+
+.add input{
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+.add h2{
+  font-size: 2.5em;
+}
+
+.add label{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+h4{
+
+  font-size: 0.8em;
+
+}
+
+/*-------------------------------------------------------------------- DETAIL */
+
+input{
+  text-align: center;
+}
+
+.btnCenter{
+  text-align: center;
+}
+
+.btnCenter button{
+  margin: 5%;
+}
+
+.editBtns {
+  transition: opacity 0.5s, color 0.5s ;
+}
+
+.editBtns:hover {
+  color: black;
+  opacity: 0.5;
+}
+
+
+/*-------------------------------------------------------------------- FOOTER */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+    overflow:hidden;
+    background-color: #ffceff;
+    color: black;
+    text-align: center;
+}
+
+footer p{
+  margin: 10px;
+  font-size: 0.9em;
+}
+
+/*---------------------------------------------------------------------- ARROWBTN */
+
+#arrow-btn {
+
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#arrow-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#arrow-btn span:after {
+  content: '\25b6';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#arrow-btn:hover span {
+  padding-right: 25px;
+}
+
+#arrow-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#plus-btn {
+
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#plus-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#plus-btn span:after {
+  content: '+';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#plus-btn:hover span {
+  padding-right: 25px;
+}
+
+#plus-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*---------------------------------------------------------------- ANIMATIONS */
+
+.red:focus{
+    outline-width: 0;
+    animation: red-anim 1s ease-out infinite;
+}
+
+.green:focus{
+    outline-width: 0;
+    animation: green-anim 1s ease-out infinite;
+}
+
+@keyframes green-anim {
+  0%{background-color:#97f990;}
+  50%{background-color:#b7ffb2;}
+  100%{background-color:#97f990;}
+}
+
+@keyframes red-anim {
+  0%{background-color: #fc9c9c;}
+  50%{background-color: #ffb2b2}
+  100%{background-color: #fc9c9c;}
+}
+
+
+form:required{
+  outline-width: 0;
+  border: 4px solid #dddddd;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: required-anim 0.2s ease-out infinite;
+}
+
+@keyframes required-anim {
+  0%{box-shadow: 0px 0px 20px red; }
+  50%{box-shadow: 0px 0px 17px red;}
+  100%{box-shadow: 0px 0px 20px red;}
+}
+
+
+
+.lds-circle {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+  margin-top: 46px;
+  border-radius: 50%;
+  background: #FFCEFF;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+#loadingP{
+  font-size: 1.5em;
+  color: #ffceff;
+}
+
+
+/*------------------------------------------------------------------ LIGHTBOX */
+
+.backgroundLayer{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  animation: popup 0.5s ease-out;
+}
+
+.activepopup{
+  z-index: 2;
+  top: 25%;
+  width: 500px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: white;
+  animation: popupexpand 0.5s ease-in-out;
+}
+
+.activepopup h2, .activepopup p{
+  text-align: center;
+  color: #333;
+}
+
+.activepopup h2{
+  font-size: 2em;
+  margin-top: 5%;
+  margin-bottom: 1%;
+
+}
+
+.activepopup p{
+  font-size: 1em;
+
+}
+
+.activepopup .remove, .activepopup .back{
+
+  background-color: #fff;
+  color: #333;
+  font-size: 1.3em;
+  padding: 2% 20% 2% 20%;
+}
+
+.activepopup .remove:hover{
+  color: #333;
+  animation: red-anim 0.2s both ease-out infinite;
+}
+
+ .activepopup .back:hover{
+   color: #333;
+   animation: green-anim 0.2s both ease-out infinite;
+ }
+
+ .activepopup .remove{
+   color: white;
+   background-color: red;
+ }
+
+  .activepopup .back{
+    color: white;
+    background-color: green;
+  }
+
+ @keyframes popup {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes popupexpand {
+  0%{opacity: 0; transform: scale(0);}
+  80%{opacity: 1; transform: scale(1.1);}
+  100%{transform: scale(1);}
+  }
+}

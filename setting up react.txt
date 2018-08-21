@@ -1,0 +1,21 @@
+npx create-react-app my-app
+cd my-app
+npm start
+
+api zip -> in map 
+npm start in api en npm start in create-react-app map 
+components: zie herexamen front end components en App.js 
+register service worker -> zie herexamen front-end/ studentenmap 
+
+form handling-> zie AddChar/CharDetail in herexamen front-end 
+
+api ajax calls: https://reactjs.org/docs/faq-ajax.html
+
+npm install --save react-router-dom in cmd -> install react router dom 
+
+routing: app.js
+
+_____________________________________________________________________________________
+Pdf kdg react
+https://bb.kdg.be/bbcswebdav/pid-1669332-dt-content-rid-13716340_1/courses/KDG_IWT.BMCT.59856/ReactJS.pdf
+https://bb.kdg.be/bbcswebdav/pid-1676147-dt-content-rid-13872896_1/courses/KDG_IWT.BMCT.59856/React%20routing%20%26%20data.pdf
